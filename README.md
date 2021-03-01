@@ -48,3 +48,12 @@ __How long is a study session?__
 There is no particular reason, I don't know nahuatl neither I have special interest in people knowing this word. I used it just because it was the first thing that came to my mind after "pomodoro".
 
 ---
+
+## Ringtone credits
+
+[marimba-do-re-mi-fa-so.wav](https://freesound.org/people/pogmothoin/sounds/401722/)
+ downloaded from [freesound.org](https://freesound.org/)
+
+credits to: [kickblue22](https://kickblue22.com//)
+
+---
