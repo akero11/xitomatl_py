@@ -1,6 +1,9 @@
 from time import sleep
 from datetime import timedelta
 from playsound import playsound
+from threading import Thread
+
+import tkinter as tk
 
 import argparse
 
@@ -28,7 +31,7 @@ class Period:
 
         print(' - finished')
 
-        playsound('marimba-do-re-mi-fa-so.wav', block = False)
+        playsound('marimba-do-re-mi-fa-so.wav')
 
 
 def run(type_, duration, gui):
