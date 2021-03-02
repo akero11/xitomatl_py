@@ -8,28 +8,63 @@ import tkinter as tk
 import argparse
 
 
+_BASIC_CONFIG = {
+    'font' : ("Arial", 18),
+    'foreground' : 'white',
+    'background' : 'black'
+}
+
+
+class GraphicTimer:
+    def __init__(self, period_type):
+        window = tk.Tk()
+        window.title('Xitomatl')
+
+        lbl_period_type = tk.Label(
+            text = period_type,
+            **_BASIC_CONFIG
+        )
+        lbl_period_type.pack(padx = 5, pady = 5)
+
+        time = tk.StringVar()
+        lbl_time = tk.Label(
+            textvariable = time,
+            width = 4,
+            **_BASIC_CONFIG
+        )
+        lbl_time.pack(padx = 5, pady = 5)
+
+        self.window = window
+        self.time = time
+    
+    def update(self):
+        self.window.update()
+
+
 class Period:
     def __init__(self, type_, duration, gui = False):
         self.type_ = type_
         self.duration = duration
-        self.gui = gui
+        if gui:
+            self.gui = GraphicTimer(self.type_)
     
     def start_countdown(self):
         print('Starting ' + self.type_ + ' period.')
 
         seconds = self.duration * 60
-    
-        if self.gui:
-            ...
-        else:
-            update_timer = lambda second : print('\r' + str(timedelta(seconds = second)), end = '')
 
         for second in range(seconds, -1, -1):
             sleep(1)
 
-            update_timer(second)
+            str_time = str(timedelta(seconds = second))[2:]
 
-        print(' - finished')
+            if self.gui:
+                self.gui.time.set(str_time)
+                self.gui.update()
+
+            print('\r' + str_time, end = '')
+
+        print('\nFinished')
 
         playsound('marimba-do-re-mi-fa-so.wav')
 
