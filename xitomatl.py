@@ -51,6 +51,8 @@ class Period:
         self.duration = duration
         if gui:
             self.gui = GraphicTimer(self.type_)
+        else:
+            self.gui = gui
     
     def start_countdown(self):
         print('Starting ' + self.type_ + ' period.')
