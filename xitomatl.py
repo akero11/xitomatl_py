@@ -40,6 +40,10 @@ class GraphicTimer:
     def update(self):
         self.window.update()
 
+    def end(self):
+        sleep(1)
+        self.window.destroy()
+
 
 class Period:
     def __init__(self, type_, duration, gui = False):
@@ -63,6 +67,9 @@ class Period:
                 self.gui.update()
 
             print('\r' + str_time, end = '')
+
+        if self.gui:
+            self.gui.end()
 
         print('\nFinished')
 
