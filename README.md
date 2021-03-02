@@ -8,6 +8,23 @@ Since I created this repository I have realized that a pomodoro app should be ve
 
 ---
 
+## Guide
+
+The only dependency is playsound, you can install it with:
+> pip install playsound
+
+How to start a new work period with a duration of 25 minutes:
+> py xitomatl.py work -d 25  
+> or  
+> py xitomatl.py work -d 25 -g  
+
+How to start a new rest period with a duration of 5 minutes:
+> py xitomatl.py rest -d 25  
+> or  
+> py xitomatl.py rest -d 25 -g  
+
+---
+
 ## Analysis
 
 __What means pomodoro?__  
