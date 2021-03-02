@@ -23,6 +23,8 @@ How to start a new rest period with a duration of 5 minutes:
 > or  
 > py xitomatl.py rest -d 25 -g  
 
+![image](image.png)
+
 ---
 
 ## Analysis
