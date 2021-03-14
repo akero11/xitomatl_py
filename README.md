@@ -68,6 +68,14 @@ There is no particular reason, I don't know nahuatl neither I have special inter
 
 ---
 
+## Useful links
+
+[PlaySound](https://www.geeksforgeeks.org/play-sound-in-python/)
+[SimpleAudio](https://simpleaudio.readthedocs.io/en/latest/tutorial.html#waveobject-s)
+[Sound in Python](https://realpython.com/playing-and-recording-sound-python/#simpleaudio)
+
+---
+
 ## Ringtone credits
 
 [marimba-do-re-mi-fa-so.wav](https://freesound.org/people/pogmothoin/sounds/401722/)
